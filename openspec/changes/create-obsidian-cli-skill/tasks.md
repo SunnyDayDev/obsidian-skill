@@ -41,13 +41,13 @@
 
 - [x] 6.1 Use confirmed owner `SunnyDayDev` (gh authenticated, `repo` scope) — repo URL `https://github.com/SunnyDayDev/obsidian-skill`
 - [x] 6.2 Record the review policy in CONTRIBUTING: **no mandatory approving review** in v1 (`main` requires PR + CI + linear history)
-- [ ] 6.3 `git init`, commit the scaffold to `main`, create `develop` from `main`
-- [ ] 6.4 Create the public GitHub repo `obsidian-skill` and push `main` and `develop`
-- [ ] 6.5 Apply `main` branch protection via `gh api` (require PR, required status check = CI, linear history, block direct pushes; **no required approving review**) and commit the protection payload into the repo docs for reproducibility
-- [ ] 6.6 Verify protection: a direct push to `main` is rejected and a PR with failing CI cannot merge
+- [x] 6.3 `git init`, commit the scaffold to `main`, create `develop` from `main`
+- [x] 6.4 Create the public GitHub repo `obsidian-skill` and push `main` and `develop`
+- [x] 6.5 Apply `main` branch protection via `gh api` (require PR, required status check = CI, linear history, block direct pushes; **no required approving review**) and commit the protection payload into the repo docs for reproducibility
+- [x] 6.6 Verify protection: a direct push to `main` is rejected and a PR with failing CI cannot merge
 
 ## 7. Release
 
-- [ ] 7.1 Bump `version` to `1.0.0` in `plugin.json`/`marketplace.json` and finalize the `CHANGELOG.md` entry
-- [ ] 7.2 Open and merge the release PR into `main`, then tag `v1.0.0`
+- [x] 7.1 Bump `version` to `1.0.0` in `plugin.json`/`marketplace.json` and finalize the `CHANGELOG.md` entry
+- [x] 7.2 Open and merge the release PR into `main`, then tag `v1.0.0`
 - [ ] 7.3 Verify end-to-end install from the public repo with `/plugin marketplace add` + `/plugin install` on a clean Claude Code

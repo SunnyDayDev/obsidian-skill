@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-06-24
+
 ### Added
 - Initial `obsidian-cli` skill driving the Obsidian CLI: notes CRUD, search, daily
   notes, properties/tags/aliases, links/backlinks/outline, and tasks — safe by default.
@@ -14,3 +16,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   (`.claude-plugin/marketplace.json`) so the repo installs as a Claude Code plugin.
 - CI workflow validating the plugin and manifests on pull requests.
 - Repository documentation: README, CONTRIBUTING (GitFlow), LICENSE (MIT).
+
+[1.0.0]: https://github.com/SunnyDayDev/obsidian-skill/releases/tag/v1.0.0

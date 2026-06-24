@@ -1,0 +1,14 @@
+# macOS / OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Claude Code workspace tooling (opsx commands, skills, local settings) — not part of the plugin
+.claude/
+
+# Node tooling (used only by CI)
+node_modules/

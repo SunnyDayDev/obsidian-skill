@@ -1,0 +1,21 @@
+{
+  "name": "obsidian-skill",
+  "owner": {
+    "name": "SunnyDayDev"
+  },
+  "description": "Marketplace hosting the Obsidian CLI plugin for Claude Code.",
+  "plugins": [
+    {
+      "name": "obsidian-cli",
+      "source": "./",
+      "description": "Operate your Obsidian vault from Claude Code via the official Obsidian CLI.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": [
+        "obsidian",
+        "cli",
+        "notes"
+      ]
+    }
+  ]
+}

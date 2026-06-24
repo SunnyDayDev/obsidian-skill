@@ -1,0 +1,41 @@
+name: validate
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [develop]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Lint manifest JSON
+        run: |
+          jq empty .claude-plugin/plugin.json
+          jq empty .claude-plugin/marketplace.json
+
+      - name: Check SKILL.md frontmatter
+        run: |
+          python3 -m pip install --quiet pyyaml
+          python3 .github/scripts/check_skill_frontmatter.py
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Validate plugin and marketplace manifests
+        run: |
+          claude plugin validate .claude-plugin/plugin.json --strict
+          claude plugin validate .claude-plugin/marketplace.json --strict

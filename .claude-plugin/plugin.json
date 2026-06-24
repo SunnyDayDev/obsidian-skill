@@ -1,7 +1,7 @@
 {
   "name": "obsidian-cli",
   "displayName": "Obsidian CLI",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Operate your Obsidian vault from Claude Code via the official Obsidian CLI — notes CRUD, search, daily notes, properties/tags, backlinks, and tasks, safe by default.",
   "author": {
     "name": "SunnyDayDev"

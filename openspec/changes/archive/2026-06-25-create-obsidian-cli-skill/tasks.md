@@ -27,7 +27,7 @@
 ## 4. Local validation
 
 - [x] 4.1 Run `claude plugin validate . --strict` and fix any manifest/frontmatter errors
-- [ ] 4.2 Manually install the plugin from the local path and confirm the `obsidian-cli` skill is invocable
+- [x] 4.2 Manually install the plugin from the local path and confirm the `obsidian-cli` skill is invocable
 - [ ] 4.3 Smoke-test a non-destructive command end-to-end (e.g. `read`/`search`) against a real vault
 
 ## 5. CI validation (capability: repository-governance)
@@ -50,4 +50,4 @@
 
 - [x] 7.1 Bump `version` to `1.0.0` in `plugin.json`/`marketplace.json` and finalize the `CHANGELOG.md` entry
 - [x] 7.2 Open and merge the release PR into `main`, then tag `v1.0.0`
-- [ ] 7.3 Verify end-to-end install from the public repo with `/plugin marketplace add` + `/plugin install` on a clean Claude Code
+- [x] 7.3 Verify end-to-end install from the public repo with `/plugin marketplace add` + `/plugin install` on a clean Claude Code (confirmed: plugin loaded as `obsidian-cli:obsidian-cli`)
